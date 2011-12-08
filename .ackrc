@@ -1,0 +1,6 @@
+--pager=less -R
+
+--type-add=html=.haml
+--type-add=css=.sass,.scss
+
+--type-set=cucumber=.feature
