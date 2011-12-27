@@ -27,6 +27,7 @@
     st = status
     s  = status -sb
     p  = pull --rebase
+    pullff = pull --ff-only
     br = branch
     co = checkout
     m = checkout master
@@ -34,6 +35,7 @@
     lg = log -p
     d  = diff
     dc = diff --cached
+    aa = add --all
     who = shortlog -s -n
     undocommit = reset --soft HEAD^
     undomerge-or-pull = reset --hard
