@@ -1,29 +1,26 @@
 #!/bin/bash
 #
-# This script counts how often a file was committed in the last x (days|weeks|months):
+# This script counts how often a file was committed since the given date:
 #
 #  42 foo/bar.txt
 #  10 foo/foo.c
 #   3 README
 #
 # Usage:
-#   how-often-were-my-files-committed-during-the-past 7days
+#   how-often-were-my-files-committed-since YYYY-MM-DD
 #
-# It may be used to roughly calculate software 'volatility charts'
+# It may e.g. be used to roughly calculate software 'volatility charts'
 # http://www.grahambrooks.com/blog/metrics-based-refactoring-for-cleaner-code/
 #
 # From Matthias Lüdtke's https://github.com/mat/dotfiles
 
 set -e
 
-timespan=$1
-if [ -z "$timespan" ]; then
-  timespan='2 months'
-  echo "Showing changes from the last $timespan" 1>&2;
-fi
-
+since_date=$1
 
 main() {
+  make_sure_we_have_a_date
+
   revisions |
   while read revision ; do
     files_changed_in_this_revision
@@ -32,8 +29,15 @@ main() {
   aggregate_and_sort
 }
 
+function make_sure_we_have_a_date {
+  if [ -z "$since_date" ]; then
+    echo "example usage: $0 2011-03-15"
+    exit $E_BADARGS
+  fi
+}
+
 function revisions {
-  git rev-list master@{"$timespan ago"}..master
+  git rev-list master --since="$since_date"
 }
 
 function files_changed_in_this_revision {
