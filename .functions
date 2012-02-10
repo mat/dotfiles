@@ -1,0 +1,13 @@
+# From betamatt/dotfiles
+
+function rake {
+  if [ -e Gemfile ]; then
+    if [ -e Procfile ]; then
+      bundle exec foreman run rake $@
+    else
+      bundle exec rake $@
+    fi
+  else
+    command rake $@
+  fi
+}
