@@ -1,4 +1,5 @@
 --pager=less -R
+--smart-case
 
 --type-add=html=.haml
 --type-add=css=.sass,.scss

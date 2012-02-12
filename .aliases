@@ -1,2 +1,4 @@
 alias ll='ls -l'
 alias ..='cd ..'
+
+alias be='bundle exec'

@@ -21,9 +21,12 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
+export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
 export PATH=$HOME/bin:$PATH
 
 export EDITOR="mate -w"
 
-# don't put duplicate lines in the history
 export HISTCONTROL=ignoredups
+export HISTSIZE=100000
+export HISTFILE="$HOME/.bash_history"
+export SAVEHIST=$HISTSIZE
