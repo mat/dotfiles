@@ -28,5 +28,7 @@ export EDITOR="mate -w"
 
 export HISTCONTROL=ignoredups
 export HISTSIZE=100000
+export HISTFILESIZE=1000000000
 export HISTFILE="$HOME/.bash_history"
 export SAVEHIST=$HISTSIZE
+shopt -s histappend
