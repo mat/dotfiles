@@ -1,7 +1,8 @@
 --pager=less -R
 --smart-case
 
---type-add=html=.haml
---type-add=css=.sass,.scss
-
---type-set=cucumber=.feature
+--type-add=html=haml
+--type-add=css=sass,scss
+--type-add=js=json
+--type-set=cucumber=feature
+--type-add=ruby=rake,haml
