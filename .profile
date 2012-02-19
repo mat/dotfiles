@@ -32,3 +32,5 @@ export HISTFILESIZE=1000000000
 export HISTFILE="$HOME/.bash_history"
 export SAVEHIST=$HISTSIZE
 shopt -s histappend
+stty -ixon # disable XON/XOFF - make Ctrl-s forward search work
+
