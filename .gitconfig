@@ -73,6 +73,7 @@
    email = matthias.luedtke@dynport.de
 
 [core]
+   editor = vim
    excludesfile = /Users/mat/.gitignore
 
 [github]
