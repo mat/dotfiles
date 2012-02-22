@@ -13,3 +13,6 @@ fi
 shopt -s checkwinsize
 
 alias pcucumber='CUCUMBER_FORMAT=pretty bundle exec cucumber'
+
+export CLICOLOR=1
+export LSCOLORS=DxGxcxdxCxegedabagacad
