@@ -24,8 +24,6 @@ fi
 export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
 export PATH=$HOME/bin:$PATH
 
-export EDITOR="mate -w"
-
 export HISTCONTROL=ignoredups
 export HISTSIZE=100000
 export HISTFILESIZE=1000000000
