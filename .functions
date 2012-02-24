@@ -11,3 +11,11 @@ function rake {
     command rake $@
   fi
 }
+
+function cap {
+  if [ -e Gemfile ]; then
+    bundle exec cap $@
+  else
+    command cap $@
+  fi
+}
