@@ -28,8 +28,6 @@
    sp = stash show -p
    apply-stash-to-dirty-working-tree = !git stash show -p | git apply && git stash drop
 
-   volatility = !git-volatility
-
 
 ### settings ###
 [core]
