@@ -2,4 +2,5 @@ alias ll='ls -l'
 alias ..='cd ..'
 alias cdmy='cd $CDMY'
 
+alias gti='git'
 alias be='bundle exec'
