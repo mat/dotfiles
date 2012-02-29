@@ -1,0 +1,8 @@
+#
+# git config --global core.excludesfile ~/.gitignore
+#
+.DS_Store
+*~
+*.swp
+*.i
+*.i.*
