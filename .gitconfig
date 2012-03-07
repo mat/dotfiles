@@ -43,6 +43,9 @@
 [push]
    default = nothing   # nothing | matching | upstream | current
 
+# binary file diffing with strings, enable via .gitattributes
+[diff "stringsdiff"]
+  textconv = strings
 
 ### colors ###
 [color]
