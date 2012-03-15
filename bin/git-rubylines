@@ -1,3 +1,10 @@
+#!/bin/bash
+# 
+# git rubylines
+# 
+# Who owns how many Ruby lines in a Rails app?
+#
+
 set -e
 
 find app spec features -type f -name "*.rb" | xargs -n1 git blame -w | cut -d '(' -f 2 | cut -d ' ' -f 1 | sort | uniq -c | sort -n -r
