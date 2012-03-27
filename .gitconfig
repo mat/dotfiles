@@ -1,7 +1,7 @@
 
 [alias]
    # bread and butter
-   st  = status
+   st  = show --stat
    s   = status -sb
    d   = diff
    dc  = diff --cached
