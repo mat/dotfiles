@@ -33,6 +33,7 @@
 [core]
    whitespace=-blank-at-eol      # disable leading whitespace highlighting
    # whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+   editor = vim
 
 [rerere]
    enabled = 1
@@ -42,6 +43,10 @@
 
 [push]
    default = nothing   # nothing | matching | upstream | current
+
+[gist]
+   private = yes
+   browse = yes
 
 # binary file diffing with strings, enable via .gitattributes
 [diff "stringsdiff"]
@@ -67,20 +72,14 @@
    untracked = cyan
 
 
-
 ### personal ###
 [user]
    name = Matthias Luedtke
    email = matthias.luedtke@dynport.de
 
 [core]
-   editor = vim
    excludesfile = /Users/mat/.gitignore
 
 [github]
    user = mat
    token = FOOBAR
-
-[gist]
-   private = yes
-   browse = yes
