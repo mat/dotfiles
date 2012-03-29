@@ -1,5 +1,14 @@
 #! /usr/bin/env ruby
 # jsonshow.rb
+# 
+# Pretty prints JSON read from stdin:
+# 
+# $ echo '{"foo":["bar"]}' | jsonshow.rb 
+# {
+#   "foo": [
+#     "bar"
+#   ]
+# }
 
 require 'rubygems'
 require 'json'
