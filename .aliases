@@ -2,5 +2,7 @@ alias ll='ls -l'
 alias ..='cd ..'
 alias cdmy='cd $CDMY'
 
+alias hi='history | tail -20'
+
 alias gti='git'
 alias be='bundle exec'
