@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# Filter rspec file names from output like
+# 
+#   rspec ./spec/models/foo_spec.rb:11
+#   rspec ./spec/models/bar_spec.rb:42
+#   0.007 per example
+#
+# Example usage:
+#     $ failedrspecs | xargs bundle exec rspec
+
+
+set -e
+
+pbpaste | egrep "^rspec [^:]+" -o  | cut -d " " -f 2 | sort -u
