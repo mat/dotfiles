@@ -1,4 +1,4 @@
---pager=less -R
+--pager=less -FXR
 --smart-case
 
 --type-add=html=haml
