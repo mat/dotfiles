@@ -15,7 +15,7 @@ require 'json'
 
 stdin = $stdin.read
 
-result = stdin.gsub!(/\{.*\}/) do |json|
+result = stdin.gsub!(/\{.*\}/m) do |json|
   (JSON.pretty_generate(JSON.parse(json))) rescue json
 end
 
