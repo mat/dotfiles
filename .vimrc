@@ -1,5 +1,6 @@
 set nocompatible
 set encoding=utf-8
+set directory=~/tmp/vimswap   " put .swp files here
 syntax enable
 
 set guifont=Bitstream\ Vera\ Sans\ Mono\ 8 
