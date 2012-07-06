@@ -15,3 +15,7 @@ function cap {
     command cap $@
   fi
 }
+
+function force_utf8 {
+  iconv -c -f utf-8 -t utf-8
+}
