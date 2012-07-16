@@ -6,6 +6,7 @@ RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 RUBY_GC_MALLOC_LIMIT=100000000
 RUBY_HEAP_FREE_MIN=500000
 
+# (git) bash completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
@@ -22,3 +23,6 @@ export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedabagacad
 
 PS1="\w \$ "
+
+# Include ~/Dropbox/dotfiles/bin
+export PATH="$HOME/Dropbox/dotfiles/bin:$PATH"
