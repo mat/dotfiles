@@ -14,6 +14,8 @@
 #  Mean     :        1.7185
 #  3rd Qu.  :        2.1000
 #  90th Pct.:        2.1000
+#  95th Pct.:        2.1000
+#  99th Pct.:        2.1000
 #  Max      :        2.1000
 
 
@@ -57,6 +59,8 @@ class Rlikestats
     puts "Mean     :  %12.4f" % mean
     puts "3rd Qu.  :  %12.4f" % percentile(0.75)
     puts "90th Pct.:  %12.4f" % percentile(0.90)
+    puts "95th Pct.:  %12.4f" % percentile(0.95)
+    puts "99th Pct.:  %12.4f" % percentile(0.99)
     puts "Max      :  %12.4f" % values.last
   end
 end
