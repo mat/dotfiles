@@ -19,62 +19,57 @@
 #  Max      :        2.1000
 #  Stddev   :        0.5395
 
-
 class Rlikestats
 
-  attr_accessor :values, :count, :mean, :lines
-
   def initialize
-    self.values = []
-    self.count = 0
-    self.mean  = 0.0
-    self.lines = 0
-    self.m2 = 0.0
+    @values = []
+    @count = 0
+    @mean  = 0.0
+    @lines = 0
+    @m2 = 0.0
   end
 
   def run
     while line = $stdin.gets
-      self.lines += 1
+      @lines += 1
       unless line =~ /^\d/
         $stderr.puts "Skipping line #{lines}: #{line}"
         next
       end
       val = line.to_f
-      self.count += 1
+      @count += 1
 
-      delta = val - mean
-      self.mean = mean + delta / count
-      self.m2 = m2 + delta * (val - mean)
+      delta = val - @mean
+      @mean = @mean + delta / @count
+      @m2 += delta * (val - @mean)
 
-      values << val
+      @values << val
     end
-    variance = m2 / (count - 1)
-    self.stddev = Math.sqrt(variance)
+    variance = @m2 / (@count - 1)
+    @stddev = Math.sqrt(variance)
 
-    values.sort!
+    @values.sort!
     print_result
   end
 
-  def percentile(pct)
-    values[(count * pct).floor]
-  end
-
+  private
   def print_result
-    puts "#Values  :  %12d"   % values.size
-    puts "Min      :  %12.4f" % values.first
+    puts "#Values  :  %12d"   % @values.size
+    puts "Min      :  %12.4f" % @values.first
     puts "1st Qu.  :  %12.4f" % percentile(0.25)
     puts "Median   :  %12.4f" % percentile(0.50)
-    puts "Mean     :  %12.4f" % mean
+    puts "Mean     :  %12.4f" % @mean
     puts "3rd Qu.  :  %12.4f" % percentile(0.75)
     puts "90th Pct.:  %12.4f" % percentile(0.90)
     puts "95th Pct.:  %12.4f" % percentile(0.95)
     puts "99th Pct.:  %12.4f" % percentile(0.99)
-    puts "Max      :  %12.4f" % values.last
-    puts "Stddev   :  %12.4f" % stddev
+    puts "Max      :  %12.4f" % @values.last
+    puts "Stddev   :  %12.4f" % @stddev
   end
 
-  private
-  attr_accessor :m2, :stddev
+  def percentile(pct)
+    @values[(@count * pct).floor]
+  end
 end
 
 Rlikestats.new.run
