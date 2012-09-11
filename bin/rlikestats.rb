@@ -33,7 +33,7 @@ class Rlikestats
     while line = $stdin.gets
       @lines += 1
       unless line =~ /^\d/
-        $stderr.puts "Skipping line #{lines}: #{line}"
+        $stderr.puts "Skipping line #{@lines}: #{line}"
         next
       end
       val = line.to_f
