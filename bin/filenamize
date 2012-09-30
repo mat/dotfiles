@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+# Usage example:
+#
+# $ echo "Foo bar ; baz" | filenamize
+# foo-bar-baz
+
+require 'active_support/all'
+
+str = $stdin.read
+puts str.parameterize
+
