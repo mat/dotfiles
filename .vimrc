@@ -8,6 +8,8 @@ set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 
 
+set mouse=a
+
 "" Appearance
 set number           " show line numbers
 set ruler            " ruler display in status line
