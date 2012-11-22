@@ -1,0 +1,16 @@
+#! /usr/bin/env ruby
+# 
+# Shuffles lines read from stdin:
+# 
+# $ echo -e "1\n2\n3\n4" | shuffle_lines
+# 3
+# 1
+# 2
+# 4
+
+begin
+  lines = $stdin.readlines
+  puts lines.shuffle!
+rescue Errno::EPIPE
+
+end
