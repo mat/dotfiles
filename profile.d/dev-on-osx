@@ -1,4 +1,6 @@
 
+LANG=en_US.UTF-8
+
 export EDITOR="mate -w"
 
 RUBY_HEAP_SLOTS_INCREMENT=500000
