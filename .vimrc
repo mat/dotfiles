@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 set nocompatible
 set encoding=utf-8
 set directory=~/tmp/vimswap   " put .swp files here
