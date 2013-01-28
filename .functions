@@ -19,3 +19,8 @@ function cap {
 function force_utf8 {
   iconv -c -f utf-8 -t utf-8
 }
+
+function word_diff {
+  git diff --word-diff --color-words --no-index --word-diff-regex='\\w+|[^[:space:]]' $1 $2
+}
+
