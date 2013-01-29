@@ -27,6 +27,7 @@
    sl = stash list
    sp = stash show -p
    apply-stash-to-dirty-working-tree = !git stash show -p | git apply && git stash drop
+	g = grep --break --heading --line-number
 
 
 ### settings ###
@@ -83,3 +84,6 @@
 [github]
    user = mat
    token = FOOBAR
+[grep]
+	lineNumber = true
+	extendRegexp = true
