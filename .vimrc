@@ -28,7 +28,6 @@ set incsearch          " incremental searching
 set ignorecase
 set smartcase
 set wrapscan           " search around end of file
-set list
 
 
 set history=1000
