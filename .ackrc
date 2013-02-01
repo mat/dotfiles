@@ -3,6 +3,6 @@
 
 --type-add=html=haml
 --type-add=css=sass,scss
---type-add=js=json
+--type-add=js=json,coffee
 --type-set=cucumber=feature
 --type-add=ruby=rake,haml
