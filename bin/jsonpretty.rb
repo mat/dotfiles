@@ -1,9 +1,9 @@
 #! /usr/bin/env ruby
-# jsonshow.rb
+# jsonpretty.rb
 # 
 # Pretty prints JSON read from stdin:
 # 
-# $ echo '{"foo":["bar"]}' | jsonshow.rb 
+# $ echo '{"foo":["bar"]}' | jsonpretty.rb 
 # {
 #   "foo": [
 #     "bar"
