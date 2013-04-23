@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# charguess - stupid meta wrapper
+# 
+# Because I always forget which options there are...
+# 
+# $ charguess FILE
+
+set -e
+
+echo "uchardet:"
+uchardet "$@"
+
+echo "enca:"
+enca "$@"
+
