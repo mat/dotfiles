@@ -12,5 +12,5 @@ echo "uchardet:"
 uchardet "$@"
 
 echo "enca:"
-enca "$@"
+enca -d -L none "$@"
 
