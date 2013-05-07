@@ -3,7 +3,7 @@ LANG=en_US.UTF-8
 
 export EDITOR="mate -w"
 
-export GIT_PAGER='less -r'
+export GIT_PAGER='less -FXR'
 
 RUBY_HEAP_SLOTS_INCREMENT=500000
 RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
