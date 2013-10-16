@@ -4,7 +4,7 @@
 # 
 # [UIColor colorWithRed:19.0f/255.0f green:222.0f/255.0f blue:55.0f/255.0f alpha:1.0f]
 #
-# From Matthias Luedtke - https://github.com/mat/dotfile
+# From Matthias Luedtke - https://github.com/mat/dotfiles
 #
 
 hexstring = ARGV[0]
