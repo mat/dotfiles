@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+# Usage: hex_to_uicolor 13de37
+# 
+# [UIColor colorWithRed:19.0f/255.0f green:222.0f/255.0f blue:55.0f/255.0f alpha:1.0f]
+#
+# From Matthias Luedtke - https://github.com/mat/dotfile
+#
+
+hexstring = ARGV[0]
+hexstring = hexstring.gsub(/^#/, "")
+
+r = hexstring[0,2].to_i(16).to_f
+g = hexstring[2,2].to_i(16).to_f
+b = hexstring[4,2].to_i(16).to_f
+
+puts "[UIColor colorWithRed:%sf/255.0f green:%sf/255.0f blue:%sf/255.0f alpha:1.0f]" % [r,g,b]
+
