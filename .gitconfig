@@ -84,9 +84,6 @@
 [core]
    excludesfile = /Users/mat/.gitignore
 
-[github]
-   user = mat
-   token = FOOBAR
 [grep]
 	lineNumber = true
 	extendRegexp = true
