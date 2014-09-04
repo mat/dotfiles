@@ -21,6 +21,10 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
+# Type some text, then use up and down arrows to search in history.
+bind '"\e[A":history-search-backward'
+bind '"\e[B":history-search-forward'
+
 export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
 export PATH=$HOME/bin:$PATH
 
