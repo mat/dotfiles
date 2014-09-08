@@ -35,6 +35,7 @@
    whitespace=-blank-at-eol      # disable leading whitespace highlighting
    # whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
    editor = vim
+   excludesfile = ~/.gitignore
 
 [rerere]
    enabled = 1
