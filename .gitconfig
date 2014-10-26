@@ -22,6 +22,7 @@
    who     = shortlog -s -n
    slap    = blame -w   #ignore whitespace
    ignored = ls-files -i -o --exclude-standard
+   authors = !git log --format='%aN <%aE>' | sort -u
 
    # stash
    sl = stash list
