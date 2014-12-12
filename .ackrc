@@ -6,3 +6,7 @@
 --type-add=js=json,coffee
 --type-set=cucumber=feature
 --type-add=ruby=rake,haml
+
+--ignore-dir=tmp
+--ignore-dir=log
+--ignore-dir=.idea
