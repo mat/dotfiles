@@ -45,7 +45,7 @@
    log = true
 
 [push]
-   default = nothing   # nothing | matching | upstream | current
+   default = simple
 
 [gist]
    private = yes
