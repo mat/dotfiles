@@ -1,8 +1,6 @@
-execute pathogen#infect()
-
 set nocompatible
 set encoding=utf-8
-set directory=~/tmp/vimswap   " put .swp files here
+set directory=/tmp " put .swp files here
 syntax enable
 
 let mapleader = ","
