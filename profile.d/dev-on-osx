@@ -1,14 +1,7 @@
 
 LANG=en_US.UTF-8
 
-export EDITOR="vim"
-
 export GIT_PAGER='less -FXR'
-
-RUBY_HEAP_SLOTS_INCREMENT=500000
-RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-RUBY_GC_MALLOC_LIMIT=100000000
-RUBY_HEAP_FREE_MIN=500000
 
 # (git) bash completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
@@ -19,14 +12,7 @@ fi
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-alias pcucumber='CUCUMBER_FORMAT=pretty bundle exec cucumber'
-
-alias vim='mvim -v'
-
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedabagacad
 
 PS1="\w \$ "
-
-# Include ~/Dropbox/dotfiles/bin
-export PATH="$HOME/Dropbox/dotfiles/bin:$PATH"
