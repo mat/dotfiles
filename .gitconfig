@@ -47,6 +47,10 @@
 [push]
    default = simple
 
+[grep]
+   lineNumber = true
+   extendRegexp = true
+
 [gist]
    private = yes
    browse = yes
@@ -77,12 +81,7 @@
    changed = yellow
    untracked = cyan
 
-
 ### personal ###
 [user]
    name = Matthias Luedtke
-   email = matthias.luedtke@dynport.de
-
-[grep]
-	lineNumber = true
-	extendRegexp = true
+   email = github@matthias-luedtke.de

@@ -7,3 +7,5 @@
 *.i
 *.i.*
 .idea
+Makefile.private
+
