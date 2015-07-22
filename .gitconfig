@@ -85,3 +85,7 @@
 [user]
    name = Matthias Luedtke
    email = github@matthias-luedtke.de
+
+### local settings ###
+[include]
+   path = local.gitconfig # may include additions and overrides
