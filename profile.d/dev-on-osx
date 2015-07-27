@@ -16,3 +16,5 @@ export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedabagacad
 
 PS1="\w \$ "
+
+alias ma='git checkout master'
