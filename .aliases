@@ -6,3 +6,4 @@ alias hi='history | tail -20'
 
 alias gti='git'
 alias be='bundle exec'
+alias curlstatus='curl -sL -w "%{http_code} %{url_effective}\\n" -o /dev/null'
