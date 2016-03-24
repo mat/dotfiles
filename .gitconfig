@@ -15,6 +15,7 @@
    co  = checkout
    ci  = commit
    amend = commit --amend
+   touch = commit --amend --reset-author
    undocommit = reset --soft HEAD^
    undomerge-or-pull = reset --hard
 
