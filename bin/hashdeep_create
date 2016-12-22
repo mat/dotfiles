@@ -1,0 +1,6 @@
+
+set -e
+set -x
+
+hashdeep -r . > hashdeep.txt
+
