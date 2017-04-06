@@ -3,10 +3,7 @@ LANG=en_US.UTF-8
 
 export GIT_PAGER='less -FXR'
 
-# (git) bash completion
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
-fi
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
