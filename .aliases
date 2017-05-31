@@ -7,4 +7,5 @@ alias hi='history | tail -20'
 alias gti='git'
 alias be='bundle exec'
 alias openreadme='open -a MacDown R[Ee][Aa][Dd][Mm]*'
+alias opengithub="open `git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's@com:@com/@'`| head -n1"
 alias curlstatus='curl -sL -w "%{http_code} %{url_effective}\\n" -o /dev/null'
