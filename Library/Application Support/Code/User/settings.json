@@ -1,5 +1,5 @@
 {
     "workbench.editor.enablePreview": false,
-    "git.ignoredRepositories": ["/Users/luedtke"],
+    "git.ignoredRepositories": ["/Users/luedtke", "/Users/Mat"],
     "workbench.startupEditor": "newUntitledFile"
 }
