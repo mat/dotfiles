@@ -1,5 +1,7 @@
 {
     "workbench.editor.enablePreview": false,
-    "git.ignoredRepositories": ["/Users/luedtke", "/Users/Mat"],
-    "workbench.startupEditor": "newUntitledFile"
+    "git.ignoredRepositories": ["/Users/luedtke", "/Users/Mat", "/Users/mat"],
+    "workbench.startupEditor": "newUntitledFile",
+    "files.trimTrailingWhitespace": true,
+    "explorer.confirmDelete": false
 }
