@@ -1,7 +1,14 @@
 {
     "workbench.editor.enablePreview": false,
-    "git.ignoredRepositories": ["/Users/luedtke", "/Users/Mat", "/Users/mat"],
+    "git.ignoredRepositories": ["/Users/luedtke", "/Users/Mat", "/Users/mat", "/Users/matthias.luedtke"],
     "workbench.startupEditor": "newUntitledFile",
     "files.trimTrailingWhitespace": true,
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "editor.fontSize": 17,
+    "terminal.integrated.rendererType": "dom",
+    "git.autofetch": true,
+    "[dockerfile]": {},
+    "materialTheme.accent": "Cyan",
+    "editor.renderWhitespace": "all",
+    "workbench.colorTheme": "Visual Studio Light"
 }
