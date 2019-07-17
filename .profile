@@ -27,6 +27,7 @@ bind '"\e[B":history-search-forward'
 
 export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
 export PATH=$HOME/bin:$PATH
+export PATH=$HOME/go/bin:$PATH
 
 export HISTCONTROL=ignoredups
 export HISTSIZE=100000
