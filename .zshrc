@@ -49,8 +49,7 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}
 # zstyle ':completion:*' list-suffixes
 # zstyle ':completion:*' expand prefix suffix
 
-
-LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 export GIT_PAGER='less -FXR'
 
 alias ll='ls -l'
@@ -63,11 +62,12 @@ alias bi='bundle install --jobs 4'
 alias bu='bundle update --jobs 4'
 
 alias openreadme='open -a MacDown R[Ee][Aa][Dd][Mm]*'
-alias opengithub="open `git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's@com:@com/@'`| head -n1"
 alias curlstatus='curl -sL -w "%{http_code} %{url_effective}\\n" -o /dev/null'
 
 # cd directly into these directories:
 export cdpath=($HOME/data/repos/git)
+# ...append in zshrc_local like so:
+# export cdpath=($cdpath $HOME/go/src/github.com/mat)
 
 # Load .zshrc_local if present
 [ -f .zshrc_local ] && source .zshrc_local
