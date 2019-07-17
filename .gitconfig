@@ -88,7 +88,7 @@
 ### personal ###
 [user]
    name = Matthias Luedtke
-   email = matthias.luedtke@gmail.com
+#   email = # We use EMAIL instead
 
 ### local settings ###
 [include]
