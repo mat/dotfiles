@@ -61,6 +61,10 @@ cmake-build-*/
 # File-based project format
 *.iws
 
+# mat: In general, I believe the ones on the main project leve are supposed to be shared,
+# but in case of Ruby this leads to an .iml which changes on every gem update... 🤷‍♂️
+*.iml
+
 # IntelliJ
 out/
 
