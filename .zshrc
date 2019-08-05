@@ -49,6 +49,12 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}
 # zstyle ':completion:*' list-suffixes
 # zstyle ':completion:*' expand prefix suffix
 
+
+# https://scriptingosx.com/2019/07/moving-to-zsh-part-7-miscellanea/
+# History search using arrow keys
+bindkey $'^[[A' up-line-or-search    # up arrow
+bindkey $'^[[B' down-line-or-search  # down arrow
+
 export LANG=en_US.UTF-8
 export GIT_PAGER='less -FXR'
 
