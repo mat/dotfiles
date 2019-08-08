@@ -89,3 +89,9 @@ bundle_update_commit () {
     git commit Gemfile.lock -m "bundle update"
     git show
 }
+
+rubocopa_commit () {
+    rubocop -a
+    git commit . -m "rubocop -a"
+    git show
+}
