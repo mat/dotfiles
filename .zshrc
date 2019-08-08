@@ -95,3 +95,7 @@ rubocopa_commit () {
     git commit . -m "rubocop -a"
     git show
 }
+
+getpdffilename () {
+    java -jar $HOME/jars/pdfrenamer.jar getfilename $HOME/pdfrenamer-config.json $1
+}
