@@ -97,5 +97,5 @@ rubocopa_commit () {
 }
 
 getpdffilename () {
-    java -jar $HOME/jars/pdfrenamer.jar getfilename $HOME/pdfrenamer-config.json $1
+    java -jar $HOME/jars/pdfrenamer.jar getfilename $HOME/pdfrenamer-config.json $@
 }
