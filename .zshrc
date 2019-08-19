@@ -96,6 +96,6 @@ rubocopa_commit () {
     git show
 }
 
-getpdffilename () {
-    java -jar $HOME/jars/pdfrenamer.jar getfilename $@
+renamepdf () {
+    java -jar $HOME/jars/pdfrenamer.jar $@
 }
