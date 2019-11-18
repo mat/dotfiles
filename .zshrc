@@ -74,6 +74,9 @@ alias cop='rubocop -a'
 alias openreadme='open -a MacDown R[Ee][Aa][Dd][Mm]*'
 alias curlstatus='curl -sL -w "%{http_code} %{url_effective}\\n" -o /dev/null'
 
+
+export PATH=$HOME/bin:$PATH
+
 # cd directly into these directories:
 export cdpath=($HOME/data/repos/git $HOME/Library/Mobile\ Documents/com\~apple\~CloudDocs)
 # ...append in zshrc_local like so:
