@@ -6,6 +6,8 @@ export PROMPT='%B%F{240}%~%f%b %# '
 # export PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%1~%f%b %# '
 # export PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%~%f%b %# '
 
+export EDITOR="code -w"
+
 # git info in RPROMPT
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
