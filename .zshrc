@@ -89,17 +89,6 @@ export cdpath=($HOME/data/repos/git $HOME/Library/Mobile\ Documents/com\~apple\~
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-bundle_update_commit () {
-    bundle update --jobs 4
-    git commit Gemfile.lock -m "bundle update"
-    git show
-}
-
-rubocopa_commit () {
-    rubocop -a
-    git commit . -m "rubocop -a"
-    git show
-}
 
 renamepdf () {
     java -jar $HOME/jars/pdfrenamer.jar $@
