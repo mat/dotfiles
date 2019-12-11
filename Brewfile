@@ -38,6 +38,8 @@ brew "sbt"
 brew "scala"
 
 cask "adoptopenjdk/openjdk/adoptopenjdk11"
+cask "betterzip"
+cask "docker"
 cask "google-cloud-sdk"
 cask "intellij-idea"
 cask "macdown"
