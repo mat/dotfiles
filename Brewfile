@@ -37,7 +37,7 @@ brew "maven"
 brew "sbt"
 brew "scala"
 
-cask "adoptopenjdk/openjdk/adoptopenjdk11"
+cask "adoptopenjdk11"
 cask "betterzip"
 cask "docker"
 cask "google-cloud-sdk"
