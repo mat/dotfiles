@@ -83,7 +83,7 @@ export cdpath=($HOME/data/repos/git $HOME/Library/Mobile\ Documents/com\~apple\~
 # export cdpath=($cdpath $HOME/go/src/github.com/mat)
 
 # Load .zshrc_local if present
-[ -f .zshrc_local ] && source .zshrc_local
+[ -f $HOME/.zshrc_local ] && source $HOME/.zshrc_local
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
