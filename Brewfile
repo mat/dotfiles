@@ -9,6 +9,7 @@ brew "mas"
 mas "BetterSnapTool", id: 417375580
 mas "DaisyDisk", id: 411643860
 mas "Kindle", id: 405399194
+mas "Pastebot", id: 1179623856
 mas "Soulver 2", id: 413965349
 mas "Theine", id: 955848755
 mas "Tweetbot 2", id: 557168941
@@ -39,6 +40,7 @@ brew "scala"
 
 cask "adoptopenjdk11"
 cask "betterzip"
+cask "deckset"
 cask "docker"
 cask "google-cloud-sdk"
 cask "intellij-idea"
