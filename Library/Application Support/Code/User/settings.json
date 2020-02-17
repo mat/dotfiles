@@ -10,5 +10,6 @@
     "[dockerfile]": {},
     "materialTheme.accent": "Cyan",
     "editor.renderWhitespace": "all",
-    "workbench.colorTheme": "Visual Studio Light"
+    "workbench.colorTheme": "Visual Studio Light",
+    "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace"
 }
