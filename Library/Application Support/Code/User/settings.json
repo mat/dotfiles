@@ -11,5 +11,8 @@
     "materialTheme.accent": "Cyan",
     "editor.renderWhitespace": "all",
     "workbench.colorTheme": "Visual Studio Light",
-    "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace"
+    "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "window.zoomLevel": 1
 }
