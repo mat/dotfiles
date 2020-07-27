@@ -5,8 +5,7 @@
    s   = status -sb
    d   = diff
    dc  = diff --cached
-   p   = pull --rebase
-   pff = pull --ff-only
+   p   = pull
    aa  = add --all
    ir  = rebase -i origin/master
    l   = log --pretty=format:'%Cred%h%Creset %C(bold blue)<%an> -%C(yellow)%d%Creset %s %Cgreen(%cr) %Creset' --abbrev-commit --date=relative
@@ -47,6 +46,9 @@
 
 [push]
    default = simple
+
+[pull]
+	rebase = true
 
 [grep]
    lineNumber = true
