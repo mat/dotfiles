@@ -89,6 +89,12 @@ export cdpath=($HOME/data/repos/git $HOME/Library/Mobile\ Documents/com\~apple\~
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+# EXPORT env variables contained within a .env file
+dotenv () {
+  set -a
+  [ -f .env ] && source .env
+  set +a
+}
 
 pdfrenamer-local () {
     java -jar $HOME/jars/pdfrenamer.jar $@
