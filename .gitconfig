@@ -17,6 +17,7 @@
    touch = commit --amend --reset-author
    undocommit = reset --soft HEAD^
    undomerge-or-pull = reset --hard
+   my-changed-files = diff master..HEAD --name-only
 
    # stats
    who     = shortlog -s -n
