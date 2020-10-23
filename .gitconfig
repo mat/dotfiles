@@ -69,6 +69,9 @@
 # Enable pretty diffing https://github.com/blog/2188-git-2-9-has-been-released
 [diff]
    compactionHeuristic=true
+# https://gist.github.com/tekin/12500956bd56784728e490d8cef9cb81#gistcomment-3500150
+[diff "rspec"]
+   xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario|background)[ \t].*)$"
 
 ### colors ###
 [color]
