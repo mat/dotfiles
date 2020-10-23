@@ -38,6 +38,7 @@
    # whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
    editor = vim
    excludesfile = ~/.gitignore
+   attributesfile = ~/.gitattributes
 
 [rerere]
    enabled = 1

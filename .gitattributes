@@ -1,0 +1,19 @@
+
+# Sources:
+# https://tekin.co.uk/2020/10/better-git-diff-output-for-ruby-python-elixir-and-more
+# https://gist.github.com/tekin/12500956bd56784728e490d8cef9cb81
+# https://github.com/alexkaratarakis/gitattributes/blob/master/Java.gitattributes
+
+*.cs            diff=csharp
+*.css           diff=css
+*.go            diff=golang
+*.gradle        diff=java
+*.gradle.kts    diff=java
+*.html          diff=html
+*.java          diff=java
+*.md            diff=markdown
+*.pl            diff=perl
+*.py            diff=python
+*.rake          diff=ruby
+*.rb            diff=ruby
+*.xhtml         diff=html
