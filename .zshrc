@@ -71,6 +71,11 @@ alias bi='bundle install --jobs 4'
 alias bu='bundle update --jobs 4'
 alias cop='rubocop -a'
 
+# kubectl https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/kubectl/kubectl.plugin.zsh
+alias keti='kubectl exec -ti'
+alias kpf='kubectl port-forward'
+alias kgp='kubectl get pods'
+
 alias openreadme='open -a MacDown R[Ee][Aa][Dd][Mm]*'
 alias curlstatus='curl -sL -w "%{http_code} %{url_effective}\\n" -o /dev/null'
 
@@ -99,3 +104,6 @@ dotenv () {
 pdfrenamer-local () {
     java -jar $HOME/jars/pdfrenamer.jar $@
 }
+
+# Fix kubectl bash completion...
+source <(kubectl completion zsh)
