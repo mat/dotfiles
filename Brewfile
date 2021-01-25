@@ -13,6 +13,8 @@ mas "Pastebot", id: 1179623856
 mas "Soulver 2", id: 413965349
 mas "Theine", id: 955848755
 mas "Tweetbot 2", id: 557168941
+mas "Adblock Plus for Safari ", id: 1432731683
+mas "Hush for Safari", id: 1544743900
 
 brew "ack"
 brew "bash-completion"
