@@ -6,6 +6,7 @@
 cask_args appdir: "/Applications"
 
 brew "mas"
+mas "1Password", id: 1333542190
 mas "BetterSnapTool", id: 417375580
 mas "DaisyDisk", id: 411643860
 mas "Kindle", id: 405399194
