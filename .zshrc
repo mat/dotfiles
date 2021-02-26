@@ -76,6 +76,10 @@ alias keti='kubectl exec -ti'
 alias kpf='kubectl port-forward'
 alias kgp='kubectl get pods'
 
+# Docker
+alias docker-cleanup-containers='docker rm -f $(docker ps -a -q)'
+alias docker-cleanup-images='docker rmi -f $(docker images -q)'
+
 alias openreadme='open -a MacDown R[Ee][Aa][Dd][Mm]*'
 alias curlstatus='curl -sL -w "%{http_code} %{url_effective}\\n" -o /dev/null'
 
