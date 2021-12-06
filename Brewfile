@@ -28,6 +28,7 @@ brew "jq"
 brew "libtool"
 brew "readline", link: true
 brew "wget"
+brew "watch"
 
 # Go and Co.
 brew "dep"
