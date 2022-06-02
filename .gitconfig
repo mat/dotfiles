@@ -101,3 +101,8 @@
 ### local settings ###
 [include]
    path = local.gitconfig # may include additions and overrides
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

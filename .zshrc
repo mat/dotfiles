@@ -21,7 +21,7 @@ zstyle ':vcs_info:*' enable git
 # History file https://scriptingosx.com/2019/06/moving-to-zsh-part-3-shell-options/
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 setopt EXTENDED_HISTORY
-SAVEHIST=50000
+SAVEHIST=100000
 HISTSIZE=70000
 # share history across multiple zsh sessions
 setopt SHARE_HISTORY

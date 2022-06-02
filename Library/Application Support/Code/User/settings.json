@@ -10,9 +10,20 @@
     "[dockerfile]": {},
     "materialTheme.accent": "Cyan",
     "editor.renderWhitespace": "all",
-    "workbench.colorTheme": "Visual Studio Light",
     "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "python.pythonPath": "/usr/bin/python3",
+    "workbench.editor.untitled.hint": "hidden",
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.autoDetectColorScheme": true,
+    "workbench.colorTheme": "Default Light+"
 }
