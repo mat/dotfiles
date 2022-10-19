@@ -85,6 +85,7 @@ alias curlstatus='curl -sL -w "%{http_code} %{url_effective}\\n" -o /dev/null'
 
 
 export PATH=$HOME/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
 
 # cd directly into these directories:
 export cdpath=($HOME/data/repos/git $HOME/Library/Mobile\ Documents/com\~apple\~CloudDocs)
@@ -111,3 +112,5 @@ pdfrenamer-local () {
 
 # Fix kubectl bash completion...
 source <(kubectl completion zsh)
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
