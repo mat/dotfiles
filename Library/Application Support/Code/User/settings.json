@@ -13,7 +13,6 @@
     "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
-    "window.zoomLevel": 1,
     "go.toolsManagement.autoUpdate": true,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
@@ -25,5 +24,14 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "security.workspace.trust.untrustedFiles": "open",
     "window.autoDetectColorScheme": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "files.associations": {
+        "[Jj]enkinsfile*": "groovy"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
     "workbench.colorTheme": "Default Light+"
 }
