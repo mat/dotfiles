@@ -43,7 +43,12 @@ setopt HIST_REDUCE_BLANKS
 # setopt CORRECT
 # setopt CORRECT_ALL
 
+export PATH=$HOME/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
+
 # https://scriptingosx.com/2019/07/moving-to-zsh-part-5-completions/
+# https://docs.brew.sh/Shell-Completion
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 autoload -Uz compinit && compinit
 # case insensitive path-completion
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
@@ -83,9 +88,6 @@ alias docker-cleanup-images='docker rmi -f $(docker images -q)'
 alias openreadme='open -a MacDown R[Ee][Aa][Dd][Mm]*'
 alias curlstatus='curl -sL -w "%{http_code} %{url_effective}\\n" -o /dev/null'
 
-
-export PATH=$HOME/bin:$PATH
-export PATH=/opt/homebrew/bin:$PATH
 
 # cd directly into these directories:
 export cdpath=($HOME/data/repos/git $HOME/Library/Mobile\ Documents/com\~apple\~CloudDocs)
