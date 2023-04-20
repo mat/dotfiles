@@ -33,5 +33,8 @@
     "[python]": {
         "editor.formatOnType": true
     },
-    "workbench.colorTheme": "Default Light+"
+    "workbench.colorTheme": "Default Light+",
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.limit.value": 7
 }
