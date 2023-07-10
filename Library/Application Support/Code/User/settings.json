@@ -33,8 +33,15 @@
     "[python]": {
         "editor.formatOnType": true
     },
-    "workbench.colorTheme": "Default Light+",
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
-    "workbench.editor.limit.value": 7
+    "workbench.editor.limit.value": 7,
+    "editor.inlineSuggest.enabled": true,
+    "git.openRepositoryInParentFolders": "never",
+    "hdinsight.enableSkipPysparkInstallation": false,
+    "hdinsight.previousExtensionVersion": "1.1.19",
+    "workbench.colorTheme": "Default Light Modern",
+    "files.exclude": {
+        "**/.terragrunt-cache/**/*": true
+    }
 }
