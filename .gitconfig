@@ -40,12 +40,14 @@
    editor = vim
    excludesfile = ~/.gitignore
    attributesfile = ~/.gitattributes
+   pager = delta
 
 [rerere]
    enabled = 1
 
 [merge]
    log = true
+   conflictstyle = diff3 #delta
 
 [push]
    default = simple
@@ -70,6 +72,8 @@
 # Enable pretty diffing https://github.com/blog/2188-git-2-9-has-been-released
 [diff]
    compactionHeuristic=true
+   colorMoved = default
+
 # https://gist.github.com/tekin/12500956bd56784728e490d8cef9cb81#gistcomment-3500150
 [diff "rspec"]
    xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario|background)[ \t].*)$"
@@ -108,3 +112,11 @@
 	required = true
 [init]
 	defaultBranch = main
+
+# https://github.com/dandavison/delta
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    light = true      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
