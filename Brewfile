@@ -18,6 +18,7 @@ mas "Adblock Plus for Safari ", id: 1432731683
 mas "Hush for Safari", id: 1544743900
 
 brew "ack"
+brew "awscli"
 brew "bash-completion"
 brew "curl"
 brew "fd"
