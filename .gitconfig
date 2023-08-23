@@ -15,7 +15,7 @@
    co  = checkout
    ci  = commit
    amend = commit --amend
-   touch = commit --amend --reset-author
+   touch = commit --amend --reset-author --no-edit
    undocommit = reset --soft HEAD^
    undomerge-or-pull = reset --hard
    my-changed-files = diff master..HEAD --name-only
