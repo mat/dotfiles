@@ -71,10 +71,8 @@ alias ..='cd ..'
 alias gti='git'
 alias be='bundle exec'
 alias ma='git checkout master'
-alias gi='gem install'
 alias bi='bundle install --jobs 4'
 alias bu='bundle update --jobs 4'
-alias cop='rubocop -a'
 
 # kubectl https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/kubectl/kubectl.plugin.zsh
 alias keti='kubectl exec -ti'
