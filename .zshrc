@@ -1,4 +1,7 @@
 
+# Uncomment this and the last line at EOF to profile zsh startup
+#zmodload zsh/zprof
+
 # https://scriptingosx.com/2019/07/moving-to-zsh-06-customizing-the-zsh-prompt/
 #export PROMPT='%~ %# '
 # export PROMPT='%~ %# '
@@ -113,3 +116,5 @@ pdfrenamer-local () {
 source <(kubectl completion zsh)
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+#zprof
