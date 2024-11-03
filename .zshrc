@@ -98,10 +98,6 @@ export cdpath=($HOME/data/repos/git $HOME/Library/Mobile\ Documents/com\~apple\~
 # Load .zshrc_local if present
 [ -f $HOME/.zshrc_local ] && source $HOME/.zshrc_local
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 # EXPORT env variables contained within a .env file
 dotenv () {
   set -a
