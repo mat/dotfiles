@@ -56,6 +56,9 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}
 # zstyle ':completion:*' list-suffixes
 # zstyle ':completion:*' expand prefix suffix
 
+# navigate completions using the arrow keys:
+zstyle ':completion:*' menu select
+
 
 # https://scriptingosx.com/2019/07/moving-to-zsh-part-7-miscellanea/
 # History search using arrow keys
