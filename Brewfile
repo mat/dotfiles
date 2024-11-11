@@ -6,14 +6,17 @@
 cask_args appdir: "/Applications"
 
 brew "mas"
-mas "1Password", id: 1333542190
+mas "AusweisApp Bund", id: 948660805
 mas "BetterSnapTool", id: 417375580
+mas "Boop", id: 1518425043
 mas "DaisyDisk", id: 411643860
+mas "Exporter", id: 1099120373 # Export Notes to Markdown
 mas "Kindle", id: 405399194
 mas "Pastebot", id: 1179623856
-mas "Soulver 2", id: 413965349
+mas "Pixelmator Pro", id: 1289583905
+mas "Play Save - Videos Watch Later", id: 1596506190
+mas "Soulver 3", id: 1508732804
 mas "Theine", id: 955848755
-mas "Tweetbot 2", id: 557168941
 mas "Adblock Plus for Safari ", id: 1432731683
 mas "Hush for Safari", id: 1544743900
 
@@ -30,6 +33,7 @@ brew "httpie"
 brew "jq"
 brew "kubectx"
 brew "libtool"
+brew "rbenv"
 brew "readline", link: true
 brew "watch"
 brew "wget"
@@ -45,8 +49,6 @@ brew "gradle"
 brew "maven"
 brew "sbt"
 brew "scala"
-cask "adoptopenjdk8"
-cask "adoptopenjdk11"
 
 cask "betterzip"
 cask "deckset"
