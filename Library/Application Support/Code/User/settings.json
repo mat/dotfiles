@@ -1,10 +1,14 @@
 {
-    "workbench.editor.enablePreview": false,
-    "git.ignoredRepositories": ["/Users/luedtke", "/Users/Mat", "/Users/mat", "/Users/matthias.luedtke"],
+    "git.ignoredRepositories": [
+        "/Users/luedtke",
+        "/Users/Mat",
+        "/Users/mat",
+        "/Users/matthias.luedtke"
+    ],
     "workbench.startupEditor": "newUntitledFile",
     "files.trimTrailingWhitespace": true,
     "explorer.confirmDelete": false,
-    "editor.fontSize": 17,
+    "editor.fontSize": 20,
     "terminal.integrated.rendererType": "dom",
     "git.autofetch": true,
     "[dockerfile]": {},
@@ -18,8 +22,6 @@
         "*.ipynb": "jupyter.notebook.ipynb"
     },
     "python.pythonPath": "/usr/bin/python3",
-    "workbench.editor.untitled.hint": "hidden",
-    "python.defaultInterpreterPath": "/usr/bin/python3",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "security.workspace.trust.untrustedFiles": "open",
@@ -31,17 +33,42 @@
         "[Jj]enkinsfile*": "groovy"
     },
     "[python]": {
-        "editor.formatOnType": true
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
     "workbench.editor.limit.value": 7,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false
+    },
     "editor.inlineSuggest.enabled": true,
     "git.openRepositoryInParentFolders": "never",
     "hdinsight.enableSkipPysparkInstallation": false,
     "hdinsight.previousExtensionVersion": "1.1.19",
-    "workbench.colorTheme": "Default Light Modern",
     "files.exclude": {
-        "**/.terragrunt-cache/**/*": true
+        "**/.terragrunt-cache/**/*": true,
+        "**/.venv/" : true,
+        "**/__pycache__": true
+    },
+    "hdinsight.disableOpenSurveyLink": true,
+    "workbench.editor.empty.hint": "hidden",
+    "editor.accessibilitySupport": "off",
+    "workbench.editor.enablePreview": false,
+    "workbench.colorTheme": "Default Light Modern",
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
+    "jupyter.askForKernelRestart": false,
+    "redhat.telemetry.enabled": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
