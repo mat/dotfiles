@@ -14,7 +14,7 @@
     "[dockerfile]": {},
     "materialTheme.accent": "Cyan",
     "editor.renderWhitespace": "all",
-    "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Source Code Pro', 'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
     "go.toolsManagement.autoUpdate": true,
@@ -70,5 +70,9 @@
     },
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "chat.editing.alwaysSaveWithGeneratedChanges": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     }
 }
