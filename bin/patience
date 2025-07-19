@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+set -uo pipefail
+
+# Usage: ./patience [max_attempts] <command> [args...]
+# Example: ./patience 5 ./run-flaky-test.sh
+# This script retries a command up to a specified number of times if it fails.
+
+# If the first argument is a number, treat it as max attempts
+if [[ $# -gt 0 && "$1" =~ ^[0-9]+$ ]]; then
+  MAX_ATTEMPTS="$1"
+  shift
+else
+  MAX_ATTEMPTS=3
+fi
+
+if [ $# -eq 0 ]; then
+  echo "Usage: $0 [max_attempts] <command> [args...]"
+  exit 2
+fi
+
+last_exit_code=0
+for ((i=1; i<=MAX_ATTEMPTS; i++)); do
+  echo "Attempt $i: $*"
+  if "$@"; then
+    exit 0
+  fi
+  last_exit_code=$?
+  if [ $i -lt $MAX_ATTEMPTS ]; then
+    echo "Failed. Retrying in 2 seconds..." >&2
+    sleep 2
+  fi
+done
+
+echo "Command failed after $MAX_ATTEMPTS attempts." >&2
+exit $last_exit_code
